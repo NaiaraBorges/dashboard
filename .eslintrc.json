@@ -22,6 +22,7 @@
             2
         ],
         "linebreak-style": [
+          /*eslint linebreak-style: ["error", "windows"]*/
             "error",
             "windows"
         ],
