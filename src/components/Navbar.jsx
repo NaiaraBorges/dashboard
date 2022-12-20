@@ -69,7 +69,7 @@ const Navbar = () => {
       />
       <div className="flex">
         <NavButton
-          title="Cart"
+          title="Carrinho"
           customFunc={() => handleClick('cart')}
           color={currentColor}
           icon={<FiShoppingCart />}
@@ -82,7 +82,7 @@ const Navbar = () => {
           icon={<BsChatLeft />}
         />
         <NavButton
-          title="Notification"
+          title="Notificações"
           dotColor="rgb(254, 201, 15)"
           customFunc={() => handleClick('notification')}
           color={currentColor}
@@ -101,7 +101,7 @@ const Navbar = () => {
             <p>
               <span className="text-gray-400 text-14">Hi,</span>{' '}
               <span className="text-gray-400 font-bold ml-1 text-14">
-                Michael
+                Naiara
               </span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14" />
