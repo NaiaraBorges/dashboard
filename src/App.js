@@ -18,6 +18,7 @@ import {
   Bar,
   Pie,
   Financial,
+  Candle,
   ColorPicker,
   ColorMapping,
   Editor,
@@ -90,9 +91,9 @@ const App = () => {
                 <Route path="/ecommerce" element={<Ecommerce />} />
 
                 {/* pages  */}
-                <Route path="/orders" element={<Orders />} />
-                <Route path="/employees" element={<Employees />} />
-                <Route path="/customers" element={<Customers />} />
+                <Route path="/pedidos" element={<Orders />} />
+                <Route path="/funcionários" element={<Employees />} />
+                <Route path="/clientes" element={<Customers />} />
 
                 {/* apps  */}
                 <Route path="/kanban" element={<Kanban />} />
@@ -106,6 +107,7 @@ const App = () => {
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/pie" element={<Pie />} />
                 <Route path="/financial" element={<Financial />} />
+                <Route path="/candle" element={<Candle />} />
                 <Route path="/color-mapping" element={<ColorMapping />} />
                 <Route path="/pyramid" element={<Pyramid />} />
                 <Route path="/stacked" element={<Stacked />} />

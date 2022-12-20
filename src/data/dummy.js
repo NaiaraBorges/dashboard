@@ -9,6 +9,7 @@ import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
+import { TbChartCandle } from 'react-icons/tb';
 import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import avatar from './avatar.png';
@@ -17,12 +18,11 @@ import avatar3 from './avatar3.png';
 import avatar4 from './avatar4.jpg';
 import product1 from './product1.jpg';
 import product2 from './product2.jpg';
-import product3 from './product3.jpg';
-import product4 from './product4.jpg';
-import product5 from './product5.jpg';
-import product6 from './product6.jpg';
-import product7 from './product7.jpg';
-import product8 from './product8.jpg';
+import product3 from './product3.webp';
+import product4 from './product4.png';
+import product5 from './product5.webp';
+import product6 from './product6.webp';
+import product7 from './product7.jpeg';
 
 export const gridOrderImage = (props) => (
   <div>
@@ -394,14 +394,16 @@ export const LinePrimaryYAxis = {
 
 export const customersGrid = [
   { type: 'checkbox', width: '50' },
-  { headerText: 'Name',
+  { headerText: 'Nome',
     width: '150',
     template: customerGridImage,
     textAlign: 'Center' },
+
   { field: 'ProjectName',
-    headerText: 'Project Name',
+    headerText: 'Projeto',
     width: '150',
     textAlign: 'Center' },
+
   { field: 'Status',
     headerText: 'Status',
     width: '130',
@@ -410,23 +412,24 @@ export const customersGrid = [
     template: customerGridStatus },
   {
     field: 'Weeks',
-    headerText: 'Weeks',
+    headerText: 'Semanas',
     width: '100',
     format: 'C2',
     textAlign: 'Center' },
+
   { field: 'Budget',
-    headerText: 'Budget',
+    headerText: 'Orçamento',
     width: '100',
     format: 'yMd',
     textAlign: 'Center' },
 
   { field: 'Location',
-    headerText: 'Location',
+    headerText: 'Localização',
     width: '150',
     textAlign: 'Center' },
 
   { field: 'CustomerID',
-    headerText: 'Customer ID',
+    headerText: 'ID',
     width: '120',
     textAlign: 'Center',
     isPrimaryKey: true,
@@ -435,7 +438,7 @@ export const customersGrid = [
 ];
 
 export const employeesGrid = [
-  { headerText: 'Employee',
+  { headerText: 'Funcionário',
     width: '150',
     template: gridEmployeeProfile,
     textAlign: 'Center' },
@@ -445,27 +448,27 @@ export const employeesGrid = [
     textAlign: 'Center',
   },
   { field: 'Title',
-    headerText: 'Designation',
+    headerText: 'Cargo',
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Country',
+  { headerText: 'País',
     width: '120',
     textAlign: 'Center',
     template: gridEmployeeCountry },
 
   { field: 'HireDate',
-    headerText: 'Hire Date',
+    headerText: 'Admissão',
     width: '135',
     format: 'yMd',
     textAlign: 'Center' },
 
   { field: 'ReportsTo',
-    headerText: 'Reports To',
+    headerText: 'Relatório',
     width: '120',
     textAlign: 'Center' },
   { field: 'EmployeeID',
-    headerText: 'Employee ID',
+    headerText: ' ID',
     width: '125',
     textAlign: 'Center' },
 ];
@@ -485,15 +488,15 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'orders',
+        name: 'pedidos',
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: 'employees',
+        name: 'funcionários',
         icon: <IoMdContacts />,
       },
       {
-        name: 'customers',
+        name: 'clientes',
         icon: <RiContactsLine />,
       },
     ],
@@ -544,6 +547,10 @@ export const links = [
         icon: <RiStockLine />,
       },
       {
+        name: 'Candle',
+        icon: <TbChartCandle />,
+      },
+      {
         name: 'color-mapping',
         icon: <BsBarChart />,
       },
@@ -563,22 +570,22 @@ export const cartData = [
   {
     image:
       product5,
-    name: 'butterscotch ice-cream',
-    category: 'Milk product',
+    name: 'Tênis Adidas superstar',
+    category: 'Shoes',
     price: '$250',
   },
   {
     image:
       product6,
-    name: 'Supreme fresh tomato',
-    category: 'Vegetable Item',
+    name: 'Sandália Prada',
+    category: 'Shoes',
     price: '$450',
   },
   {
     image:
       product7,
-    name: 'Red color candy',
-    category: 'Food Item',
+    name: 'Bolsa Colcci',
+    category: 'Bags',
     price: '$190',
   },
 ];
@@ -587,29 +594,29 @@ export const chatData = [
   {
     image:
       avatar2,
-    message: 'Roman Joined the Team!',
-    desc: 'Congratulate him',
+    message: 'Cristina juntou-se à equipe!',
+    desc: 'Dê os parabéns',
     time: '9:08 AM',
   },
   {
     image:
       avatar3,
-    message: 'New message received',
-    desc: 'Salma sent you new message',
+    message: 'Nova mensagem recebida',
+    desc: 'Christopher te enviou uma mensagem',
     time: '11:56 AM',
   },
   {
     image:
       avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
+    message: 'Novo Pagamento recebido',
+    desc: 'Verifique sua carteira',
     time: '4:39 AM',
   },
   {
     image:
       avatar,
-    message: 'Jolly completed tasks',
-    desc: 'Assign her new tasks',
+    message: 'Projeto concluído',
+    desc: 'Marque uma nova reunião',
     time: '1:12 AM',
   },
 ];
@@ -619,7 +626,7 @@ export const earningData = [
     icon: <MdOutlineSupervisorAccount />,
     amount: '39,354',
     percentage: '-4%',
-    title: 'Customers',
+    title: 'Clientes',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',
@@ -628,7 +635,7 @@ export const earningData = [
     icon: <BsBoxSeam />,
     amount: '4,396',
     percentage: '+23%',
-    title: 'Products',
+    title: 'Produtos',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
     pcColor: 'green-600',
@@ -637,7 +644,7 @@ export const earningData = [
     icon: <FiBarChart />,
     amount: '423,39',
     percentage: '+38%',
-    title: 'Sales',
+    title: 'Vendas',
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
 
@@ -647,7 +654,7 @@ export const earningData = [
     icon: <HiOutlineRefresh />,
     amount: '39,354',
     percentage: '-12%',
-    title: 'Refunds',
+    title: 'Restituições',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
@@ -658,8 +665,8 @@ export const recentTransactions = [
   {
     icon: <BsCurrencyDollar />,
     amount: '+$350',
-    title: 'Paypal Transfer',
-    desc: 'Money Added',
+    title: 'Transferência Paypal',
+    desc: 'Dinheiro Adicionado',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
     pcColor: 'green-600',
@@ -667,8 +674,8 @@ export const recentTransactions = [
   {
     icon: <BsShield />,
     amount: '-$560',
-    desc: 'Bill Payment',
-    title: 'Wallet',
+    desc: 'Pagamentos',
+    title: 'Carteira',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
@@ -676,8 +683,8 @@ export const recentTransactions = [
   {
     icon: <FiCreditCard />,
     amount: '+$350',
-    title: 'Credit Card',
-    desc: 'Money reversed',
+    title: 'Cartão de crédito',
+    desc: 'Transações',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
 
@@ -686,9 +693,8 @@ export const recentTransactions = [
   {
     icon: <TiTick />,
     amount: '+$350',
-    title: 'Bank Transfer',
-    desc: 'Money Added',
-
+    title: 'Transferência bancária',
+    desc: 'Dinheiro Adicionado',
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
     pcColor: 'green-600',
@@ -697,8 +703,8 @@ export const recentTransactions = [
     icon: <BsCurrencyDollar />,
     amount: '-$50',
     percentage: '+38%',
-    title: 'Refund',
-    desc: 'Payment Sent',
+    title: 'Reembolso',
+    desc: 'Pagamento enviado',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',
@@ -709,24 +715,24 @@ export const weeklyStats = [
   {
     icon: <FiShoppingCart />,
     amount: '-$560',
-    title: 'Top Sales',
-    desc: 'Johnathan Doe',
+    title: 'Principais Vendas',
+    desc: 'John Doe',
     iconBg: '#FB9678',
     pcColor: 'red-600',
   },
   {
     icon: <FiStar />,
     amount: '-$560',
-    title: 'Best Seller',
-    desc: 'MaterialPro Admin',
+    title: 'Mais vendidos',
+    desc: 'Apple Watch',
     iconBg: 'rgb(254, 201, 15)',
     pcColor: 'red-600',
   },
   {
     icon: <BsChatLeft />,
     amount: '+$560',
-    title: 'Most Commented',
-    desc: 'Ample Admin',
+    title: 'Mais Comentado',
+    desc: 'Dashboard Pro',
     iconBg: '#00C292',
     pcColor: 'green-600',
   },
@@ -774,15 +780,15 @@ export const productsPerformance = [
 export const medicalproBranding = {
   data: [
     {
-      title: 'Due Date',
+      title: 'Vencimento',
       desc: 'Oct 23, 2021',
     },
     {
-      title: 'Budget',
+      title: 'Orçamento',
       desc: '$98,500',
     },
     {
-      title: 'Expense',
+      title: 'Despesas',
       desc: '$63,000',
     },
   ],
@@ -794,6 +800,10 @@ export const medicalproBranding = {
     {
       name: 'Angular',
       color: '#FB9678',
+    },
+    {
+      name: 'React',
+      color: '#03C9D7',
     },
   ],
   leaders: [
@@ -850,15 +860,15 @@ export const themeColors = [
 export const userProfileData = [
   {
     icon: <BsCurrencyDollar />,
-    title: 'My Profile',
-    desc: 'Account Settings',
+    title: 'Meu Perfil',
+    desc: 'Configurações da conta',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
   },
   {
     icon: <BsShield />,
     title: 'My Inbox',
-    desc: 'Messages & Emails',
+    desc: 'Mensagens & Emails',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
   },
@@ -873,7 +883,7 @@ export const userProfileData = [
 
 export const ordersGrid = [
   {
-    headerText: 'Image',
+    headerText: 'Imagem',
     template: gridOrderImage,
     textAlign: 'Center',
     width: '120',
@@ -886,13 +896,13 @@ export const ordersGrid = [
     textAlign: 'Center',
   },
   { field: 'CustomerName',
-    headerText: 'Customer Name',
+    headerText: 'Nome do Cliente',
     width: '150',
     textAlign: 'Center',
   },
   {
     field: 'TotalAmount',
-    headerText: 'Total Amount',
+    headerText: 'Valor total',
     format: 'C2',
     textAlign: 'Center',
     editType: 'numericedit',
@@ -907,14 +917,14 @@ export const ordersGrid = [
   },
   {
     field: 'OrderID',
-    headerText: 'Order ID',
+    headerText: 'ID do pedido',
     width: '120',
     textAlign: 'Center',
   },
 
   {
     field: 'Location',
-    headerText: 'Location',
+    headerText: 'Localização',
     width: '150',
     textAlign: 'Center',
   },
@@ -928,11 +938,11 @@ export const customersData = [
     CustomerImage:
       avatar2,
     ProjectName: 'Hosting Press HTML',
-    Status: 'Active',
+    Status: 'Ativo',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
-    Location: 'India',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1002,
@@ -940,14 +950,14 @@ export const customersData = [
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
-    Status: 'Active',
+    Status: 'Ativo',
     CustomerImage:
       avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
-    Location: 'India',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1003,
@@ -955,7 +965,7 @@ export const customersData = [
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
-    Status: 'Pending',
+    Status: 'Pendente',
     CustomerImage:
       avatar4,
     StatusBg: '#FEC90F',
@@ -969,13 +979,13 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Concluído',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
-    Location: 'USA',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1005,
@@ -983,13 +993,13 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'Cancelado',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
-    Location: 'USA',
+    Location: 'Argentina',
   },
   {
     CustomerID: 1006,
@@ -998,11 +1008,11 @@ export const customersData = [
     CustomerImage:
       avatar2,
     ProjectName: 'Hosting Press HTML',
-    Status: 'Active',
+    Status: 'Ativo',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
-    Location: 'India',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1007,
@@ -1010,14 +1020,14 @@ export const customersData = [
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
-    Status: 'Active',
+    Status: 'Ativo',
     CustomerImage:
       avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
-    Location: 'India',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1008,
@@ -1025,7 +1035,7 @@ export const customersData = [
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
-    Status: 'Pending',
+    Status: 'Pendente',
     CustomerImage:
       avatar4,
     StatusBg: '#FEC90F',
@@ -1039,7 +1049,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Concluído',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1053,7 +1063,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'Cancelado',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1068,7 +1078,7 @@ export const customersData = [
     CustomerImage:
       avatar2,
     ProjectName: 'Hosting Press HTML',
-    Status: 'Active',
+    Status: 'Ativo',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
@@ -1080,14 +1090,14 @@ export const customersData = [
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
-    Status: 'Active',
+    Status: 'Ativo',
     CustomerImage:
       avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
-    Location: 'India',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1013,
@@ -1095,13 +1105,13 @@ export const customersData = [
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
-    Status: 'Pending',
+    Status: 'Pendente',
     CustomerImage:
       avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
-    Location: 'USA',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1014,
@@ -1109,13 +1119,13 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Concluído',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
-    Location: 'USA',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1015,
@@ -1123,13 +1133,13 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'Cancelado',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
-    Location: 'USA',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1016,
@@ -1138,7 +1148,7 @@ export const customersData = [
     CustomerImage:
       avatar2,
     ProjectName: 'Hosting Press HTML',
-    Status: 'Active',
+    Status: 'Ativo',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
@@ -1150,7 +1160,7 @@ export const customersData = [
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
-    Status: 'Active',
+    Status: 'Ativo',
     CustomerImage:
       avatar3,
 
@@ -1165,13 +1175,13 @@ export const customersData = [
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
-    Status: 'Pending',
+    Status: 'Pendente',
     CustomerImage:
       avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
-    Location: 'USA',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1019,
@@ -1179,7 +1189,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Concluído',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1193,7 +1203,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'Cancelado',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1208,7 +1218,7 @@ export const customersData = [
     CustomerImage:
       avatar2,
     ProjectName: 'Hosting Press HTML',
-    Status: 'Active',
+    Status: 'Ativo',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
@@ -1220,7 +1230,7 @@ export const customersData = [
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
-    Status: 'Active',
+    Status: 'Ativo',
     CustomerImage:
       avatar3,
 
@@ -1235,13 +1245,13 @@ export const customersData = [
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
-    Status: 'Pending',
+    Status: 'Pendente',
     CustomerImage:
       avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
-    Location: 'USA',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1024,
@@ -1249,13 +1259,13 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Concluído',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
-    Location: 'USA',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1025,
@@ -1263,7 +1273,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'Cancelado',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1278,7 +1288,7 @@ export const customersData = [
     CustomerImage:
       avatar2,
     ProjectName: 'Hosting Press HTML',
-    Status: 'Active',
+    Status: 'Ativo',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
@@ -1290,7 +1300,7 @@ export const customersData = [
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
-    Status: 'Active',
+    Status: 'Ativo',
     CustomerImage:
       avatar3,
 
@@ -1305,7 +1315,7 @@ export const customersData = [
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
-    Status: 'Pending',
+    Status: 'Pendente',
     CustomerImage:
       avatar4,
     StatusBg: '#FEC90F',
@@ -1319,7 +1329,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Concluído',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1333,7 +1343,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'Cancelado',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1348,7 +1358,7 @@ export const customersData = [
     CustomerImage:
       avatar2,
     ProjectName: 'Hosting Press HTML',
-    Status: 'Active',
+    Status: 'Ativo',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
@@ -1360,7 +1370,7 @@ export const customersData = [
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
-    Status: 'Active',
+    Status: 'Ativo',
     CustomerImage:
       avatar3,
 
@@ -1375,7 +1385,7 @@ export const customersData = [
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
-    Status: 'Pending',
+    Status: 'Pendente',
     CustomerImage:
       avatar4,
     StatusBg: '#FEC90F',
@@ -1389,7 +1399,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Concluído',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1403,7 +1413,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'Cancelado',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1418,7 +1428,7 @@ export const customersData = [
     CustomerImage:
       avatar2,
     ProjectName: 'Hosting Press HTML',
-    Status: 'Active',
+    Status: 'Ativo',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
@@ -1430,7 +1440,7 @@ export const customersData = [
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
-    Status: 'Active',
+    Status: 'Ativo',
     CustomerImage:
       avatar3,
 
@@ -1445,7 +1455,7 @@ export const customersData = [
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
-    Status: 'Pending',
+    Status: 'Pendente',
     CustomerImage:
       avatar4,
     StatusBg: '#FEC90F',
@@ -1458,20 +1468,20 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Concluído',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
-    Location: 'USA',
+    Location: 'Brasil',
   },
   {
     CustomerID: 1040,
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'Cancelado',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1486,9 +1496,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
-    HireDate: '01/02/2021',
-    Country: 'USA',
+    Title: 'Representante de vendas ',
+    HireDate: '01/03/2022',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar3,
@@ -1496,9 +1506,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
+    Title: 'Marketing Digital',
+    HireDate: '04/02/2022',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1506,8 +1516,8 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
-    HireDate: '01/02/2021',
+    Title: 'Backend Developer',
+    HireDate: '01/03/2022',
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
@@ -1516,9 +1526,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: 'Chefe de Marketing',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1526,9 +1536,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: 'Frontend Developer',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'India',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1536,9 +1546,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: 'Software Developer',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'India',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1546,9 +1556,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: 'Coordenador de projetos',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'India',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1556,7 +1566,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Designer',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1567,9 +1577,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: 'Vendedor',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1577,7 +1587,7 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: 'Analista Administrativo',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1587,9 +1597,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: 'Advogada',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1597,9 +1607,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: 'Product Manager',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1607,9 +1617,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: 'Developer',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1617,9 +1627,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: 'Developer',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1627,7 +1637,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Designer',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1637,7 +1647,7 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: 'Marketing',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1647,9 +1657,9 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: 'Representante de vendas',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1657,9 +1667,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: 'Marketing Digital',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Argentina',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1667,7 +1677,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: 'Backend Developer',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1677,7 +1687,78 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: 'Chefe de Marketing',
+    HireDate: '01/02/2021',
+    Country: 'Argentina',
+    ReportsTo: 'Carson',
+    EmployeeImage:
+      avatar,
+  },
+  {
+    EmployeeID: 5,
+    Name: 'Miron Vitold',
+    Title: 'Chefe de Marketing',
+    HireDate: '01/02/2021',
+    Country: 'Argentina',
+    ReportsTo: 'Carson',
+    EmployeeImage:
+      avatar2,
+  },
+  {
+    EmployeeID: 1,
+    Name: 'Nancy Davolio',
+    Title: 'Chefe de Marketing',
+    HireDate: '01/02/2021',
+    Country: 'Peru',
+    ReportsTo: 'Carson',
+    EmployeeImage:
+    avatar2,
+
+  },
+  {
+    EmployeeID: 2,
+    Name: 'Nasimiyu Danai',
+    Title: 'Frontend Developer',
+    HireDate: '01/02/2021',
+    Country: 'México',
+    ReportsTo: 'Carson',
+    EmployeeImage:
+      avatar3,
+  },
+  {
+    EmployeeID: 3,
+    Name: 'Iulia Albu',
+    Title: 'Frontend Developer',
+    HireDate: '01/02/2021',
+    Country: 'México',
+    ReportsTo: 'Carson',
+    EmployeeImage:
+      avatar4,
+  },
+  {
+    EmployeeID: 4,
+    Name: 'Siegbert Gottfried',
+    Title: 'Coordenador de projetos',
+    HireDate: '01/02/2021',
+    Country: 'Brasil',
+    ReportsTo: 'Carson',
+    EmployeeImage:
+      avatar2,
+  },
+  {
+    EmployeeID: 5,
+    Name: 'Omar Darobe',
+    Title: 'Frontend Developer',
+    HireDate: '01/02/2021',
+    Country: 'Colombia',
+    ReportsTo: 'Carson',
+    EmployeeImage:
+      avatar,
+  },
+  {
+    EmployeeID: 4,
+    Name: 'Penjani Inyene',
+    Title: 'Coordenador de projetos',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1687,7 +1768,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: 'Vendedor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1697,7 +1778,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Coordenador de projetos',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1708,7 +1789,7 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: 'Vendedor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1718,7 +1799,7 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: 'Vendedor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1728,9 +1809,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: 'Analista Administrativo',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'India',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1738,7 +1819,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: 'Advogado',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1748,9 +1829,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: 'Analista Administrativo',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'India',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1758,9 +1839,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: 'Product Manager',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1768,7 +1849,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Product Manager',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1779,9 +1860,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: 'Product Manager',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1789,7 +1870,7 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: 'Coordenador de projetos',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1799,9 +1880,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: 'Designer',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1809,7 +1890,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: 'Designer',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1819,9 +1900,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: 'Marketing Digital',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1829,7 +1910,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: 'Marketing Digital',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1839,7 +1920,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Marketing Digital',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1850,7 +1931,7 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: 'Coordenador de projetos',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1860,9 +1941,9 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: 'Backend Developer',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1870,9 +1951,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: 'Backend Developer',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1880,7 +1961,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: 'Software Developer',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1890,7 +1971,7 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: 'Software Developer',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1900,7 +1981,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: 'Designer',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1910,9 +1991,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Designer',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1921,9 +2002,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: 'Designer',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1931,7 +2012,7 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: 'Chefe de Marketing',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1941,7 +2022,7 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: 'Chefe de Marketing',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1951,7 +2032,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: 'Chefe de Marketing',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1961,9 +2042,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: 'Vendedor',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1971,9 +2052,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: 'Vendedor',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1981,9 +2062,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Vendedor',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1992,9 +2073,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: 'Marketing',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -2002,7 +2083,7 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: 'Vendedor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -2012,7 +2093,7 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: 'Developer',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -2022,9 +2103,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: 'Developer',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2032,9 +2113,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: 'Vendedor',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Brasil',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2042,78 +2123,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 1,
-    Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
-
-  },
-  {
-    EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
-  },
-  {
-    EmployeeID: 3,
-    Name: 'Iulia Albu',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Omar Darobe',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 4,
-    Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: 'Vendedor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -2127,10 +2137,10 @@ export const ordersData = [
     OrderID: 10248,
     CustomerName: 'Vinet',
 
-    TotalAmount: 32.38,
-    OrderItems: 'Fresh Tomato',
+    TotalAmount: 75.38,
+    OrderItems: 'Sandália',
     Location: 'USA',
-    Status: 'pending',
+    Status: 'pendente',
     StatusBg: '#FB9678',
     ProductImage:
       product6,
@@ -2139,9 +2149,9 @@ export const ordersData = [
     OrderID: 345653,
     CustomerName: 'Carson Darrin',
     TotalAmount: 56.34,
-    OrderItems: 'Butter Scotch',
-    Location: 'Delhi',
-    Status: 'complete',
+    OrderItems: 'Tênis Adidas',
+    Location: 'Brasil',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2152,7 +2162,7 @@ export const ordersData = [
     TotalAmount: 93.31,
     OrderItems: 'Candy Gucci',
     Location: 'New York',
-    Status: 'active',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
       product7,
@@ -2160,21 +2170,21 @@ export const ordersData = [
   {
     OrderID: 893486,
     CustomerName: 'Anika Viseer',
-    TotalAmount: 93.31,
-    OrderItems: 'Night Lamp',
-    Location: 'Germany',
-    Status: 'canceled',
+    TotalAmount: 260.31,
+    OrderItems: 'Bota Feminina Talita ',
+    Location: 'Brasil',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
-      product4,
+      'https://not-me.com.br/wp-content/uploads/2020/06/Bota-Feminina-Over-The-Knee-Branca.jpg',
   },
   {
     OrderID: 748975,
     CustomerName: 'Miron Vitold',
     TotalAmount: 23.99,
-    OrderItems: 'Healthcare Erbology',
-    Location: 'Spain',
-    Status: 'rejected',
+    OrderItems: 'Blazer Zara Pink',
+    Location: 'Argentina',
+    Status: 'rejeitado',
     StatusBg: 'red',
     ProductImage:
     product1,
@@ -2183,9 +2193,9 @@ export const ordersData = [
     OrderID: 94757,
     CustomerName: 'Omar Darobe',
     TotalAmount: 95.99,
-    OrderItems: 'Makeup Lancome Rouge',
+    OrderItems: 'Óculos Ray-Ban',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       product2,
@@ -2196,7 +2206,7 @@ export const ordersData = [
     TotalAmount: 17.99,
     OrderItems: 'Skincare',
     Location: 'USA',
-    Status: 'active',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
       product3,
@@ -2205,9 +2215,9 @@ export const ordersData = [
     OrderID: 845954,
     CustomerName: 'Penjani',
     TotalAmount: 59.99,
-    OrderItems: 'Headphone',
+    OrderItems: 'Relógio Casio',
     Location: 'USA',
-    Status: 'complete',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2216,20 +2226,20 @@ export const ordersData = [
     OrderID: 845954,
     CustomerName: 'Jie Yan',
     TotalAmount: 87.99,
-    OrderItems: 'Shoes',
-    Location: 'USA',
-    Status: 'pending',
+    OrderItems: 'La Vie Est Belle',
+    Location: 'Brasil',
+    Status: 'pendente',
     StatusBg: '#FB9678',
     ProductImage:
-      'https://cdn.shopclues.com/images1/thumbnails/104158/320/320/148648730-104158193-1592481791.jpg',
+      'https://shopluxo.vteximg.com.br/arquivos/ids/174549-1000-1000/La-Vie-Est-Belle.jpg?v=635109681891830000',
   },
   {
     OrderID: 874534,
     CustomerName: 'Danai',
     TotalAmount: 122.99,
     OrderItems: 'Watch',
-    Location: 'USA',
-    Status: 'canceled',
+    Location: 'Brasil',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2237,24 +2247,24 @@ export const ordersData = [
   {
     OrderID: 38489,
     CustomerName: 'Miron',
-    TotalAmount: 87.99,
-    OrderItems: 'Ice Cream',
-    Location: 'USA',
-    Status: 'active',
+    TotalAmount: 260.99,
+    OrderItems: 'Vestido Farm',
+    Location: 'Brasil',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
-      'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
+      'https://d15tp84buh2rvk.cloudfront.net/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/i/m/img_6366_37.jpg',
   },
   {
     OrderID: 24546,
     CustomerName: 'Frank',
-    TotalAmount: 84.99,
-    OrderItems: 'Pan Cake',
-    Location: 'Delhi',
-    Status: 'complete',
+    TotalAmount: 3600,
+    OrderItems: 'Iphone 14',
+    Location: 'Argentina',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
-      'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
+      'https://m.media-amazon.com/images/I/41al5-lNvML._AC_SX522_.jpg',
   },
   {
     OrderID: 874534,
@@ -2262,7 +2272,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2270,11 +2280,10 @@ export const ordersData = [
   {
     OrderID: 10248,
     CustomerName: 'Vinet',
-
     TotalAmount: 32.38,
-    OrderItems: 'Fresh Tomato',
-    Location: 'USA',
-    Status: 'pending',
+    OrderItems: 'Sandália',
+    Location: 'Argentina',
+    Status: 'pendente',
     StatusBg: '#FB9678',
     ProductImage:
       product6,
@@ -2283,9 +2292,9 @@ export const ordersData = [
     OrderID: 345653,
     CustomerName: 'Carson Darrin',
     TotalAmount: 56.34,
-    OrderItems: 'Butter Scotch',
-    Location: 'Delhi',
-    Status: 'complete',
+    OrderItems: 'Tenis Adidas',
+    Location: 'Brasil',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2296,7 +2305,7 @@ export const ordersData = [
     TotalAmount: 93.31,
     OrderItems: 'Candy Gucci',
     Location: 'New York',
-    Status: 'active',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
       product7,
@@ -2305,9 +2314,9 @@ export const ordersData = [
     OrderID: 893486,
     CustomerName: 'Anika Viseer',
     TotalAmount: 93.31,
-    OrderItems: 'Night Lamp',
+    OrderItems: 'Relógio Casio',
     Location: 'Germany',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       product4,
@@ -2316,9 +2325,9 @@ export const ordersData = [
     OrderID: 748975,
     CustomerName: 'Miron Vitold',
     TotalAmount: 23.99,
-    OrderItems: 'Healthcare Erbology',
+    OrderItems: 'Blazer Zara',
     Location: 'Spain',
-    Status: 'rejected',
+    Status: 'rejeitado',
     StatusBg: 'red',
     ProductImage:
       product1,
@@ -2327,9 +2336,9 @@ export const ordersData = [
     OrderID: 94757,
     CustomerName: 'Omar Darobe',
     TotalAmount: 95.99,
-    OrderItems: 'Makeup Lancome Rouge',
+    OrderItems: 'Óculos Ray-Ban',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       product2,
@@ -2340,7 +2349,7 @@ export const ordersData = [
     TotalAmount: 17.99,
     OrderItems: 'Skincare',
     Location: 'USA',
-    Status: 'active',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
       product3,
@@ -2349,9 +2358,9 @@ export const ordersData = [
     OrderID: 845954,
     CustomerName: 'Penjani',
     TotalAmount: 59.99,
-    OrderItems: 'Headphone',
-    Location: 'USA',
-    Status: 'complete',
+    OrderItems: 'Relógio Casio',
+    Location: 'Brasil',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2360,9 +2369,9 @@ export const ordersData = [
     OrderID: 845954,
     CustomerName: 'Jie Yan',
     TotalAmount: 87.99,
-    OrderItems: 'Shoes',
-    Location: 'USA',
-    Status: 'pending',
+    OrderItems: 'Tênis Sport',
+    Location: 'Brasil',
+    Status: 'pendente',
     StatusBg: '#FB9678',
     ProductImage:
       'https://cdn.shopclues.com/images1/thumbnails/104158/320/320/148648730-104158193-1592481791.jpg',
@@ -2370,43 +2379,43 @@ export const ordersData = [
   {
     OrderID: 874534,
     CustomerName: 'Danai',
-    TotalAmount: 122.99,
-    OrderItems: 'Watch',
-    Location: 'USA',
-    Status: 'canceled',
+    TotalAmount: 600,
+    OrderItems: 'Perfume Good Girl',
+    Location: 'Argentina',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
-      'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
+      'https://images-americanas.b2w.io/produtos/1877554624/imagens/perfume-importado-feminino-eau-de-parfum-80ml/1877554624_1_large.jpg',
   },
   {
     OrderID: 38489,
     CustomerName: 'Miron',
-    TotalAmount: 87.99,
-    OrderItems: 'Ice Cream',
+    TotalAmount: 200.99,
+    OrderItems: 'Tenis Vans SK8-HI',
     Location: 'USA',
-    Status: 'active',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
-      'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
+      'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h32/h25/h00/h00/10172676997150/1002001230081U-01-BASEIMAGE-Midres.jpg',
   },
   {
     OrderID: 24546,
     CustomerName: 'Frank',
-    TotalAmount: 84.99,
-    OrderItems: 'Pan Cake',
-    Location: 'Delhi',
-    Status: 'complete',
+    TotalAmount: 209,
+    OrderItems: 'Bolsa Colcci Cairo',
+    Location: 'Brasil',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
-      'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
+      'https://hellasfashionstore.com/media/imagens/upload/produto/6375/900813127_3-preto_jpg_1280x800_q100.jpg',
   },
   {
     OrderID: 874534,
     CustomerName: 'Danai',
     TotalAmount: 122.99,
     OrderItems: 'Watch',
-    Location: 'USA',
-    Status: 'canceled',
+    Location: 'Brasil',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2414,11 +2423,10 @@ export const ordersData = [
   {
     OrderID: 10248,
     CustomerName: 'Vinet',
-
     TotalAmount: 32.38,
-    OrderItems: 'Fresh Tomato',
+    OrderItems: 'Sandália',
     Location: 'USA',
-    Status: 'pending',
+    Status: 'pendente',
     StatusBg: '#FB9678',
     ProductImage:
       product6,
@@ -2427,9 +2435,9 @@ export const ordersData = [
     OrderID: 345653,
     CustomerName: 'Carson Darrin',
     TotalAmount: 56.34,
-    OrderItems: 'Butter Scotch',
-    Location: 'Delhi',
-    Status: 'complete',
+    OrderItems: 'Tênis Adidas',
+    Location: 'Brasil',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2440,7 +2448,7 @@ export const ordersData = [
     TotalAmount: 93.31,
     OrderItems: 'Candy Gucci',
     Location: 'New York',
-    Status: 'active',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
       product7,
@@ -2449,9 +2457,9 @@ export const ordersData = [
     OrderID: 893486,
     CustomerName: 'Anika Viseer',
     TotalAmount: 93.31,
-    OrderItems: 'Night Lamp',
+    OrderItems: 'Relógio Casio',
     Location: 'Germany',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       product4,
@@ -2460,20 +2468,20 @@ export const ordersData = [
     OrderID: 748975,
     CustomerName: 'Miron Vitold',
     TotalAmount: 23.99,
-    OrderItems: 'Healthcare Erbology',
+    OrderItems: 'Blazer Zara',
     Location: 'Spain',
-    Status: 'rejected',
+    Status: 'rejeitado',
     StatusBg: 'red',
     ProductImage:
       product1,
   },
   {
     OrderID: 94757,
-    CustomerName: 'Omar Darobe',
+    CustomerName: 'Christopher',
     TotalAmount: 95.99,
-    OrderItems: 'Makeup Lancome Rouge',
-    Location: 'USA',
-    Status: 'canceled',
+    OrderItems: 'Óculos Ray-Ban',
+    Location: 'Brasil',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       product2,
@@ -2483,8 +2491,8 @@ export const ordersData = [
     CustomerName: 'Lulia albu',
     TotalAmount: 17.99,
     OrderItems: 'Skincare',
-    Location: 'USA',
-    Status: 'active',
+    Location: 'Brasil',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
       product3,
@@ -2493,9 +2501,9 @@ export const ordersData = [
     OrderID: 845954,
     CustomerName: 'Penjani',
     TotalAmount: 59.99,
-    OrderItems: 'Headphone',
-    Location: 'USA',
-    Status: 'complete',
+    OrderItems: 'Relógio Casio',
+    Location: 'Argentina',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2504,9 +2512,9 @@ export const ordersData = [
     OrderID: 845954,
     CustomerName: 'Jie Yan',
     TotalAmount: 87.99,
-    OrderItems: 'Shoes',
+    OrderItems: 'Tênis Sport',
     Location: 'USA',
-    Status: 'pending',
+    Status: 'pendente',
     StatusBg: '#FB9678',
     ProductImage:
       'https://cdn.shopclues.com/images1/thumbnails/104158/320/320/148648730-104158193-1592481791.jpg',
@@ -2517,7 +2525,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2525,24 +2533,24 @@ export const ordersData = [
   {
     OrderID: 38489,
     CustomerName: 'Miron',
-    TotalAmount: 87.99,
-    OrderItems: 'Ice Cream',
-    Location: 'USA',
-    Status: 'active',
+    TotalAmount: 300,
+    OrderItems: 'Blusa adidas Original',
+    Location: 'Brasil',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
-      'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
+      'https://static.dafiti.com.br/p/adidas-Originals-Blusa-adidas-Originals-Menino-Logo-Preta-1213-9367225-1-zoom.jpg',
   },
   {
     OrderID: 24546,
     CustomerName: 'Frank',
     TotalAmount: 84.99,
-    OrderItems: 'Pan Cake',
-    Location: 'Delhi',
-    Status: 'complete',
+    OrderItems: 'Chinelo Havaianas Farm',
+    Location: 'Brasil',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
-      'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
+      'https://havaianas.com.br/dw/image/v2/BDDJ_PRD/on/demandware.static/-/Sites-havaianas-master/default/dwfafc9ca5/product-images/4148322_1740_HAVAIANAS-FARM-CHITA_A.png?sw=680&sh=680',
   },
   {
     OrderID: 874534,
@@ -2550,7 +2558,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2558,11 +2566,10 @@ export const ordersData = [
   {
     OrderID: 10248,
     CustomerName: 'Vinet',
-
     TotalAmount: 32.38,
-    OrderItems: 'Fresh Tomato',
+    OrderItems: 'Sandália',
     Location: 'USA',
-    Status: 'pending',
+    Status: 'pendente',
     StatusBg: '#FB9678',
     ProductImage:
       product6,
@@ -2571,9 +2578,9 @@ export const ordersData = [
     OrderID: 345653,
     CustomerName: 'Carson Darrin',
     TotalAmount: 56.34,
-    OrderItems: 'Butter Scotch',
-    Location: 'Delhi',
-    Status: 'complete',
+    OrderItems: 'Tênis Adidas',
+    Location: 'Argentina',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2584,7 +2591,7 @@ export const ordersData = [
     TotalAmount: 93.31,
     OrderItems: 'Candy Gucci',
     Location: 'New York',
-    Status: 'active',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
       product7,
@@ -2593,9 +2600,9 @@ export const ordersData = [
     OrderID: 893486,
     CustomerName: 'Anika Viseer',
     TotalAmount: 93.31,
-    OrderItems: 'Night Lamp',
+    OrderItems: 'Relógio Casio',
     Location: 'Germany',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       product4,
@@ -2604,9 +2611,9 @@ export const ordersData = [
     OrderID: 748975,
     CustomerName: 'Miron Vitold',
     TotalAmount: 23.99,
-    OrderItems: 'Healthcare Erbology',
+    OrderItems: 'Blazer Zara',
     Location: 'Spain',
-    Status: 'rejected',
+    Status: 'rejeitado',
     StatusBg: 'red',
     ProductImage:
       product1,
@@ -2615,9 +2622,9 @@ export const ordersData = [
     OrderID: 94757,
     CustomerName: 'Omar Darobe',
     TotalAmount: 95.99,
-    OrderItems: 'Makeup Lancome Rouge',
-    Location: 'USA',
-    Status: 'canceled',
+    OrderItems: 'Óculos Ray-Ban',
+    Location: 'Argentina',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       product2,
@@ -2627,8 +2634,8 @@ export const ordersData = [
     CustomerName: 'Lulia albu',
     TotalAmount: 17.99,
     OrderItems: 'Skincare',
-    Location: 'USA',
-    Status: 'active',
+    Location: 'Chile',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
       product3,
@@ -2637,9 +2644,9 @@ export const ordersData = [
     OrderID: 845954,
     CustomerName: 'Penjani',
     TotalAmount: 59.99,
-    OrderItems: 'Headphone',
-    Location: 'USA',
-    Status: 'complete',
+    OrderItems: 'Relógio Casio',
+    Location: 'Chile',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2648,9 +2655,9 @@ export const ordersData = [
     OrderID: 845954,
     CustomerName: 'Jie Yan',
     TotalAmount: 87.99,
-    OrderItems: 'Shoes',
+    OrderItems: 'Tênis Sport',
     Location: 'USA',
-    Status: 'pending',
+    Status: 'pendente',
     StatusBg: '#FB9678',
     ProductImage:
       'https://cdn.shopclues.com/images1/thumbnails/104158/320/320/148648730-104158193-1592481791.jpg',
@@ -2661,7 +2668,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2670,23 +2677,23 @@ export const ordersData = [
     OrderID: 38489,
     CustomerName: 'Miron',
     TotalAmount: 87.99,
-    OrderItems: 'Ice Cream',
-    Location: 'USA',
-    Status: 'active',
+    OrderItems: 'Chinelo Havaianas Farm',
+    Location: 'Brasil',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
-      'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
+      'https://havaianas.com.br/dw/image/v2/BDDJ_PRD/on/demandware.static/-/Sites-havaianas-master/default/dwfafc9ca5/product-images/4148322_1740_HAVAIANAS-FARM-CHITA_A.png?sw=680&sh=680',
   },
   {
     OrderID: 24546,
     CustomerName: 'Frank',
-    TotalAmount: 84.99,
-    OrderItems: 'Pan Cake',
-    Location: 'Delhi',
-    Status: 'complete',
+    TotalAmount: 260,
+    OrderItems: 'Bota Feminina',
+    Location: 'Brasil',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
-      'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
+      'https://not-me.com.br/wp-content/uploads/2020/06/Bota-Feminina-Over-The-Knee-Branca.jpg',
   },
   {
     OrderID: 874534,
@@ -2694,7 +2701,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2704,9 +2711,9 @@ export const ordersData = [
     CustomerName: 'Vinet',
 
     TotalAmount: 32.38,
-    OrderItems: 'Fresh Tomato',
+    OrderItems: 'Sandália',
     Location: 'USA',
-    Status: 'pending',
+    Status: 'pendente',
     StatusBg: '#FB9678',
     ProductImage:
       product6,
@@ -2715,9 +2722,9 @@ export const ordersData = [
     OrderID: 345653,
     CustomerName: 'Carson Darrin',
     TotalAmount: 56.34,
-    OrderItems: 'Butter Scotch',
-    Location: 'Delhi',
-    Status: 'complete',
+    OrderItems: 'Tênis Adidas',
+    Location: 'Brasil',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2728,7 +2735,7 @@ export const ordersData = [
     TotalAmount: 93.31,
     OrderItems: 'Candy Gucci',
     Location: 'New York',
-    Status: 'active',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
       product7,
@@ -2737,9 +2744,9 @@ export const ordersData = [
     OrderID: 893486,
     CustomerName: 'Anika Viseer',
     TotalAmount: 93.31,
-    OrderItems: 'Night Lamp',
+    OrderItems: 'Relógio Casio',
     Location: 'Germany',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       product4,
@@ -2748,20 +2755,20 @@ export const ordersData = [
     OrderID: 748975,
     CustomerName: 'Miron Vitold',
     TotalAmount: 23.99,
-    OrderItems: 'Healthcare Erbology',
+    OrderItems: 'Blazer Zara',
     Location: 'Spain',
-    Status: 'rejected',
+    Status: 'rejeitado',
     StatusBg: 'red',
     ProductImage:
       product1,
   },
   {
     OrderID: 94757,
-    CustomerName: 'Omar Darobe',
+    CustomerName: 'Óculos Ray-Ban',
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       product2,
@@ -2772,7 +2779,7 @@ export const ordersData = [
     TotalAmount: 17.99,
     OrderItems: 'Skincare',
     Location: 'USA',
-    Status: 'active',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
       product3,
@@ -2781,9 +2788,9 @@ export const ordersData = [
     OrderID: 845954,
     CustomerName: 'Penjani',
     TotalAmount: 59.99,
-    OrderItems: 'Headphone',
+    OrderItems: 'Relógio Casio',
     Location: 'USA',
-    Status: 'complete',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2792,9 +2799,9 @@ export const ordersData = [
     OrderID: 845954,
     CustomerName: 'Jie Yan',
     TotalAmount: 87.99,
-    OrderItems: 'Shoes',
+    OrderItems: 'Tênis Sport',
     Location: 'USA',
-    Status: 'pending',
+    Status: 'pendente',
     StatusBg: '#FB9678',
     ProductImage:
       'https://cdn.shopclues.com/images1/thumbnails/104158/320/320/148648730-104158193-1592481791.jpg',
@@ -2804,8 +2811,8 @@ export const ordersData = [
     CustomerName: 'Danai',
     TotalAmount: 122.99,
     OrderItems: 'Watch',
-    Location: 'USA',
-    Status: 'canceled',
+    Location: 'Brasil',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2814,31 +2821,31 @@ export const ordersData = [
     OrderID: 38489,
     CustomerName: 'Miron',
     TotalAmount: 87.99,
-    OrderItems: 'Ice Cream',
-    Location: 'USA',
-    Status: 'active',
+    OrderItems: 'Chinelo Farm',
+    Location: 'Brasil',
+    Status: 'ativo',
     StatusBg: '#03C9D7',
     ProductImage:
-      'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
+      'https://havaianas.com.br/dw/image/v2/BDDJ_PRD/on/demandware.static/-/Sites-havaianas-master/default/dwfafc9ca5/product-images/4148322_1740_HAVAIANAS-FARM-CHITA_A.png?sw=680&sh=680',
   },
   {
     OrderID: 24546,
     CustomerName: 'Frank',
-    TotalAmount: 84.99,
-    OrderItems: 'Pan Cake',
-    Location: 'Delhi',
-    Status: 'complete',
+    TotalAmount: 360,
+    OrderItems: 'Blazer Zara Pink',
+    Location: 'Brasil',
+    Status: 'completo',
     StatusBg: '#8BE78B',
     ProductImage:
-      'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
+      product1,
   },
   {
     OrderID: 874534,
     CustomerName: 'Danai',
     TotalAmount: 122.99,
     OrderItems: 'Watch',
-    Location: 'USA',
-    Status: 'canceled',
+    Location: 'Brasil',
+    Status: 'cancelado',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -3073,14 +3080,14 @@ export const lineChartData = [
 export const dropdownData = [
   {
     Id: '1',
-    Time: 'March 2021',
+    Time: 'Out 2022',
   },
   {
     Id: '2',
-    Time: 'April 2021',
+    Time: 'Nov 2022',
   }, {
     Id: '3',
-    Time: 'May 2021',
+    Time: 'Dezembro 2022',
   },
 ];
 export const SparklineAreaData = [
@@ -3096,7 +3103,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Argentina',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3104,7 +3111,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'England',
+    name: 'Brasil',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3112,7 +3119,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'India',
+    name: 'EUA',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import { ScheduleComponent, ViewsDirective, ViewDirective, Day, Week, WorkWeek, Month, Agenda, Inject, Resize, DragAndDrop } from '@syncfusion/ej2-react-schedule';
+import { ScheduleComponent, ViewsDirective, ViewDirective, Day, Week, WorkWeek, Month, Agenda, Inject, Resize, DragAndDrop} from '@syncfusion/ej2-react-schedule';
 import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
 
 import { scheduleData } from '../data/dummy';
@@ -30,8 +30,10 @@ const Scheduler = () => {
         eventSettings={{ dataSource: scheduleData }}
         dragStart={onDragStart}
       >
+
+
         <ViewsDirective>
-          { ['Day', 'Week', 'WorkWeek', 'Month', 'Agenda'].map((item) => <ViewDirective key={item} option={item} />)}
+          { ['Day', 'Week', 'WorkWeek', 'Month', 'Agenda'].map((item) => <ViewDirective key={item} option={item} colorField='CategoryColor' />)}
         </ViewsDirective>
         <Inject services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]} />
       </ScheduleComponent>
@@ -48,6 +50,7 @@ const Scheduler = () => {
                   placeholder="Current Date"
                   floatLabelType="Always"
                   change={change}
+
                 />
               </td>
             </tr>
@@ -59,3 +62,6 @@ const Scheduler = () => {
 };
 
 export default Scheduler;
+
+
+//https://stackblitz.com/edit/ej2-react-customized-timeline-month-sample?file=sample-base.js
