@@ -30,10 +30,10 @@ function Candle() {
 
   return (
     <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
-      <Header category="Candle" title="AAPLE Historical" />
+      <Header category="Gráficos" title="Ações da APPLE" />
       <div className="w-full">
 
-        <ChartComponent title="AAPL Historical"
+        <ChartComponent
           primaryXAxis={{valueType:'DateTime', minimum:new Date( '2016, 12, 31'),
             maximum:new Date( '2017, 9, 30'), labelFormat:'yMMM', title: 'Month',
             crosshairTooltip:{enable: true}}}

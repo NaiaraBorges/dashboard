@@ -82,42 +82,24 @@ const gridEmployeeCountry = (props) => (
 export const EditorData = () => (
   <div>
     <h3>
-      Try React
-      React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
+      React
+      Uma biblioteca JavaScript para construir interfaces de usuário.
 
-      Online Playgrounds
-      If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on CodePen, CodeSandbox, or Stackblitz.
+      Declarativo
+      O React facilita a criação de UIs interativas. Projete exibições simples para cada estado em seu aplicativo e o React atualizará e renderizará com eficiência apenas os componentes certos quando seus dados mudarem.
 
-      If you prefer to use your own text editor, you can also download this HTML file, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
+      Visualizações declarativas tornam seu código mais previsível e fácil de depurar.
 
-      Add React to a Website
-      You can add React to an HTML page in one minute. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
+      Baseado em Componentes
+      Crie componentes encapsulados que gerenciam seu próprio estado e, em seguida, componha-os para criar interfaces de usuário complexas.
 
-      Create a New React App
-      When starting a React project, a simple HTML page with script tags might still be the best option. It only takes a minute to set up!
+      Como a lógica do componente é escrita em JavaScript em vez de modelos, você pode facilmente passar dados avançados por meio de seu aplicativo e manter o estado fora do DOM.
 
-      As your application grows, you might want to consider a more integrated setup. There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. Learn how.
+      Aprenda uma vez, escreva em qualquer lugar
+      Não fazemos suposições sobre o restante de sua pilha de tecnologia, para que você possa desenvolver novos recursos no React sem reescrever o código existente.
 
-      Learn React
-      People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.
+      O React também pode renderizar no servidor usando Node e alimentar aplicativos móveis usando React Native .
 
-      If you prefer to learn by doing, start with our practical tutorial.
-      If you prefer to learn concepts step by step, start with our guide to main concepts.
-      Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
-
-      First Examples
-      The React homepage contains a few small React examples with a live editor. Even if you don’t know anything about React yet, try changing their code and see how it affects the result.
-
-      React for Beginners
-      If you feel that the React documentation goes at a faster pace than you’re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you’re done, give the documentation another try!
-
-      React for Designers
-      If you’re coming from a design background, these resources are a great place to get started.
-
-      JavaScript Resources
-      The React documentation assumes some familiarity with programming in the JavaScript language. You don’t have to be an expert, but it’s harder to learn both React and JavaScript at the same time.
-
-      We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
     </h3>
   </div>
 );
@@ -523,10 +505,10 @@ export const links = [
     ],
   },
   {
-    title: 'Charts',
+    title: 'Gráficos',
     links: [
       {
-        name: 'line',
+        name: 'linha',
         icon: <AiOutlineStock />,
       },
       {
@@ -535,31 +517,31 @@ export const links = [
       },
 
       {
-        name: 'bar',
+        name: 'barras',
         icon: <AiOutlineBarChart />,
       },
       {
-        name: 'pie',
+        name: 'pizza',
         icon: <FiPieChart />,
       },
       {
-        name: 'financial',
+        name: 'financeiro',
         icon: <RiStockLine />,
       },
       {
-        name: 'Candle',
+        name: 'candle',
         icon: <TbChartCandle />,
       },
       {
-        name: 'color-mapping',
+        name: 'mapeamento',
         icon: <BsBarChart />,
       },
       {
-        name: 'pyramid',
+        name: 'pirâmide',
         icon: <GiLouvrePyramid />,
       },
       {
-        name: 'stacked',
+        name: 'colunas',
         icon: <AiOutlineBarChart />,
       },
     ],
@@ -654,7 +636,7 @@ export const earningData = [
     icon: <HiOutlineRefresh />,
     amount: '39,354',
     percentage: '-12%',
-    title: 'Restituições',
+    title: 'Reembolsos',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
@@ -781,7 +763,7 @@ export const medicalproBranding = {
   data: [
     {
       title: 'Vencimento',
-      desc: 'Oct 23, 2021',
+      desc: 'Out 23, 2023',
     },
     {
       title: 'Orçamento',
@@ -794,8 +776,8 @@ export const medicalproBranding = {
   ],
   teams: [
     {
-      name: 'Bootstrap',
-      color: 'orange',
+      name: 'Vue',
+      color: '#59CE8F',
     },
     {
       name: 'Angular',
@@ -817,10 +799,6 @@ export const medicalproBranding = {
     },
     {
       image:
-        avatar2,
-    },
-    {
-      image:
         avatar4,
     },
     {
@@ -833,7 +811,7 @@ export const medicalproBranding = {
 export const themeColors = [
   {
     name: 'blue-theme',
-    color: '#1A97F5',
+    color: '#C147E9',
   },
   {
     name: 'green-theme',
@@ -849,7 +827,7 @@ export const themeColors = [
   },
   {
     name: 'indigo-theme',
-    color: '#1E4DB7',
+    color: '#F10086',
   },
   {
     color: '#FB9678',
@@ -867,15 +845,15 @@ export const userProfileData = [
   },
   {
     icon: <BsShield />,
-    title: 'My Inbox',
+    title: 'Meu Inbox',
     desc: 'Mensagens & Emails',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
   },
   {
     icon: <FiCreditCard />,
-    title: 'My Tasks',
-    desc: 'To-do and Daily Tasks',
+    title: 'Minhas Tasks',
+    desc: 'Tarefas pendentes e diárias',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
   },
@@ -3087,7 +3065,7 @@ export const dropdownData = [
     Time: 'Nov 2022',
   }, {
     Id: '3',
-    Time: 'Dezembro 2022',
+    Time: 'Dez 2022',
   },
 ];
 export const SparklineAreaData = [
@@ -3188,7 +3166,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Budget',
+    name: 'Orçamento',
     type: 'StackingColumn',
     background: 'blue',
 
@@ -3197,7 +3175,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Expense',
+    name: 'Despesas',
     type: 'StackingColumn',
     background: 'red',
 
@@ -3233,7 +3211,7 @@ export const kanbanData = [
     Id: 'Task 1',
     Title: 'Task - 29001',
     Status: 'Open',
-    Summary: 'Analyze the new requirements gathered from the customer.',
+    Summary: 'Analisar os novos requisitos coletados do cliente.',
     Type: 'Story',
     Priority: 'Low',
     Tags: 'Analyze,Customer',
@@ -3247,7 +3225,7 @@ export const kanbanData = [
     Id: 'Task 2',
     Title: 'Task - 29002',
     Status: 'InProgress',
-    Summary: 'Improve application performance',
+    Summary: 'Melhorar o desempenho do aplicativo.',
     Type: 'Improvement',
     Priority: 'Normal',
     Tags: 'Improvement',
@@ -3261,7 +3239,7 @@ export const kanbanData = [
     Id: 'Task 3',
     Title: 'Task - 29003',
     Status: 'Open',
-    Summary: 'Arrange a web meeting with the customer to get new requirements.',
+    Summary: 'Organize uma reunião com o cliente para obter novos requisitos.',
     Type: 'Others',
     Priority: 'Critical',
     Tags: 'Meeting',
@@ -3275,7 +3253,7 @@ export const kanbanData = [
     Id: 'Task 4',
     Title: 'Task - 29004',
     Status: 'InProgress',
-    Summary: 'Fix the issues reported in the IE browser.',
+    Summary: 'Corrijir os problemas relatados no navegador IE.',
     Type: 'Bug',
     Priority: 'Critical',
     Tags: 'IE',
@@ -3289,7 +3267,7 @@ export const kanbanData = [
     Id: 'Task 5',
     Title: 'Task - 29005',
     Status: 'Review',
-    Summary: 'Fix the issues reported by the customer.',
+    Summary: 'Corrijir os problemas relatados pelo cliente.',
     Type: 'Bug',
     Priority: 'Low',
     Tags: 'Customer',
@@ -3303,7 +3281,7 @@ export const kanbanData = [
     Id: 'Task 6',
     Title: 'Task - 29007',
     Status: 'Validate',
-    Summary: 'Validate new requirements',
+    Summary: 'Validar novos requisitos',
     Type: 'Improvement',
     Priority: 'Low',
     Tags: 'Validation',
@@ -3317,7 +3295,7 @@ export const kanbanData = [
     Id: 'Task 7',
     Title: 'Task - 29009',
     Status: 'Review',
-    Summary: 'Fix the issues reported in Safari browser.',
+    Summary: 'Corrija os problemas relatados no navegador Safari.',
     Type: 'Bug',
     Priority: 'Critical',
     Tags: 'Fix,Safari',
@@ -3331,7 +3309,7 @@ export const kanbanData = [
     Id: 'Task 8',
     Title: 'Task - 29010',
     Status: 'Close',
-    Summary: 'Test the application in the IE browser.',
+    Summary: 'Teste o aplicativo no navegador IE.',
     Type: 'Story',
     Priority: 'Low',
     Tags: 'Review,IE',
@@ -3345,7 +3323,7 @@ export const kanbanData = [
     Id: 'Task 9',
     Title: 'Task - 29011',
     Status: 'Validate',
-    Summary: 'Validate the issues reported by the customer.',
+    Summary: 'Validar os problemas relatados pelo cliente.',
     Type: 'Story',
     Priority: 'High',
     Tags: 'Validation,Fix',
@@ -3359,7 +3337,7 @@ export const kanbanData = [
     Id: 'Task 10',
     Title: 'Task - 29015',
     Status: 'Open',
-    Summary: 'Show the retrieved data from the server in grid control.',
+    Summary: 'Mostrar os dados recuperados do servidor no controle de grade.',
     Type: 'Story',
     Priority: 'High',
     Tags: 'Database,SQL',
@@ -3373,7 +3351,7 @@ export const kanbanData = [
     Id: 'Task 11',
     Title: 'Task - 29016',
     Status: 'InProgress',
-    Summary: 'Fix cannot open user’s default database SQL error.',
+    Summary: 'A correção não pode abrir o erro SQL do banco de dados padrão do usuário.',
     Priority: 'Critical',
     Type: 'Bug',
     Tags: 'Database,Sql2008',
@@ -3387,7 +3365,7 @@ export const kanbanData = [
     Id: 'Task 12',
     Title: 'Task - 29017',
     Status: 'Review',
-    Summary: 'Fix the issues reported in data binding.',
+    Summary: 'Corrijir os problemas relatados na vinculação de dados.',
     Type: 'Story',
     Priority: 'Normal',
     Tags: 'Databinding',
@@ -3401,7 +3379,7 @@ export const kanbanData = [
     Id: 'Task 13',
     Title: 'Task - 29018',
     Status: 'Close',
-    Summary: 'Analyze SQL server 2008 connection.',
+    Summary: 'Analisar a conexão do SQL Server 2008.',
     Type: 'Story',
     Priority: 'Critical',
     Tags: 'Grid,Sql',
@@ -3415,7 +3393,7 @@ export const kanbanData = [
     Id: 'Task 14',
     Title: 'Task - 29019',
     Status: 'Validate',
-    Summary: 'Validate databinding issues.',
+    Summary: 'Validar problemas de vinculação de dados.',
     Type: 'Story',
     Priority: 'Low',
     Tags: 'Validation',
@@ -3429,7 +3407,7 @@ export const kanbanData = [
     Id: 'Task 15',
     Title: 'Task - 29020',
     Status: 'Close',
-    Summary: 'Analyze grid control.',
+    Summary: 'Analisar o controle de grade.',
     Type: 'Story',
     Priority: 'High',
     Tags: 'Analyze',
@@ -3443,7 +3421,7 @@ export const kanbanData = [
     Id: 'Task 16',
     Title: 'Task - 29021',
     Status: 'Close',
-    Summary: 'Stored procedure for initial data binding of the grid.',
+    Summary: 'Procedimento armazenado para ligação de dados inicial do grid.',
     Type: 'Others',
     Priority: 'Critical',
     Tags: 'Databinding',
@@ -3457,7 +3435,7 @@ export const kanbanData = [
     Id: 'Task 17',
     Title: 'Task - 29022',
     Status: 'Close',
-    Summary: 'Analyze stored procedures.',
+    Summary: 'Analisar procedimentos armazenados.',
     Type: 'Story',
     Priority: 'Critical',
     Tags: 'Procedures',
@@ -3471,7 +3449,7 @@ export const kanbanData = [
     Id: 'Task 18',
     Title: 'Task - 29023',
     Status: 'Validate',
-    Summary: 'Validate editing issues.',
+    Summary: 'Validar os problemas de edição.',
     Type: 'Story',
     Priority: 'Critical',
     Tags: 'Editing',
@@ -3485,7 +3463,7 @@ export const kanbanData = [
     Id: 'Task 19',
     Title: 'Task - 29024',
     Status: 'Review',
-    Summary: 'Test editing functionality.',
+    Summary: 'Testar a funcionalidade de edição.',
     Type: 'Story',
     Priority: 'Normal',
     Tags: 'Editing,Test',
@@ -3499,7 +3477,7 @@ export const kanbanData = [
     Id: 'Task 20',
     Title: 'Task - 29025',
     Status: 'Open',
-    Summary: 'Enhance editing functionality.',
+    Summary: 'Melhorar a funcionalidade de edicação.',
     Type: 'Improvement',
     Priority: 'Low',
     Tags: 'Editing',
@@ -3513,7 +3491,7 @@ export const kanbanData = [
     Id: 'Task 21',
     Title: 'Task - 29026',
     Status: 'InProgress',
-    Summary: 'Improve the performance of the editing functionality.',
+    Summary: 'Melhorar o desempenho do sistema.',
     Type: 'Epic',
     Priority: 'High',
     Tags: 'Performance',
@@ -3527,7 +3505,7 @@ export const kanbanData = [
     Id: 'Task 22',
     Title: 'Task - 29027',
     Status: 'Open',
-    Summary: 'Arrange web meeting with the customer to show editing demo.',
+    Summary: 'Reunião com as equipes de desenvolvimento.',
     Type: 'Others',
     Priority: 'High',
     Tags: 'Meeting,Editing',
@@ -3541,7 +3519,7 @@ export const kanbanData = [
     Id: 'Task 23',
     Title: 'Task - 29029',
     Status: 'Review',
-    Summary: 'Fix the editing issues reported by the customer.',
+    Summary: 'Criar novas funcionalidades para Dashboard.',
     Type: 'Bug',
     Priority: 'Low',
     Tags: 'Editing,Fix',
@@ -3555,7 +3533,7 @@ export const kanbanData = [
     Id: 'Task 24',
     Title: 'Task - 29030',
     Status: 'Testing',
-    Summary: 'Fix the issues reported by the customer.',
+    Summary: 'Corrijir os problemas relatados pelo cliente.',
     Type: 'Bug',
     Priority: 'Critical',
     Tags: 'Customer',
@@ -3569,7 +3547,7 @@ export const kanbanData = [
     Id: 'Task 25',
     Title: 'Task - 29031',
     Status: 'Testing',
-    Summary: 'Fix the issues reported in Safari browser.',
+    Summary: 'Corrija os problemas relatados no navegador.',
     Type: 'Bug',
     Priority: 'Critical',
     Tags: 'Fix,Safari',

@@ -51,7 +51,7 @@ const Chat = () => {
           <Button
             color="white"
             bgColor={currentColor}
-            text="Ver todas"
+            text="Ver todas mensagens"
             borderRadius="10px"
             width="full"
           />

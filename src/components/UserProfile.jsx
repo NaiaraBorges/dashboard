@@ -12,7 +12,7 @@ const UserProfile = () => {
   return (
     <div className="nav-item absolute right-1 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
       <div className="flex justify-between items-center">
-        <p className="font-semibold text-lg dark:text-gray-200">Profile</p>
+        <p className="font-semibold text-lg dark:text-gray-200">Perfil</p>
         <button
           type="button"
           onClick={() => setIsClicked(true)}
@@ -30,7 +30,7 @@ const UserProfile = () => {
         />
         <div>
           <p className="font-semibold text-xl dark:text-gray-200"> Naiara Borges </p>
-          <p className="text-gray-500 text-sm dark:text-gray-400">  Developer   </p>
+          <p className="text-gray-500 text-sm dark:text-gray-400">Frontend Developer</p>
           <p className="text-gray-500 text-sm font-semibold dark:text-gray-400"> naaaidev@gmail.com </p>
         </div>
       </div>
@@ -56,7 +56,7 @@ const UserProfile = () => {
         <Button
           color="white"
           bgColor={currentColor}
-          text="Logout"
+          text="Sair da conta"
           borderRadius="10px"
           width="full"
         />
