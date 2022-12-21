@@ -61,7 +61,7 @@ const Footer = () => (
           </a>
         </div>
         <p className="mt-4 text-14 leading-6 text-center text-gray-400">
-          © 2022 Naaidev, naaaidev@gmail.com
+          © 2022. Naiara Borges, Developer.
         </p>
       </div>
     </section>
